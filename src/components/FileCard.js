@@ -143,7 +143,7 @@ function FileCard({ file, onDelete, onMove, folders, isPaid }) {
           rel="noopener noreferrer"
           onClick={(e) => e.stopPropagation()}
         >
-          Download
+          View
         </a>
       </div>
     </div>
