@@ -51,7 +51,7 @@ function Terms() {
 
           <div className="legal-section">
             <h2>8. Contact</h2>
-            <p>For questions about these Terms, contact us at legal@snaplet.com</p>
+            <p>For questions about these Terms, contact us at snapletapp@gmail.com</p>
           </div>
         </div>
       </Container>
