@@ -25,9 +25,8 @@ function FileCard({ file, onDelete, onMove, folders, isPaid }) {
     'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
 
   // ✅ FINAL resolved URL
-  const resolvedUrl = isImage
-    ? file.file_url
-    : `${BACKEND_URL}${file.file_url}`;
+  const resolvedUrl = file.file_url;
+
 
   const handleDelete = (e) => {
     e.stopPropagation();
