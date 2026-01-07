@@ -5,7 +5,9 @@ import '../FileCard.css';
 function FileCard({ file, onDelete, onMove, folders, isPaid }) {
   const [showDelete, setShowDelete] = useState(false);
 
-  const BACKEND_URL = 'http://localhost:5000';
+  const BACKEND_URL =
+  process.env.REACT_APP_API_URL || 'http://localhost:5000';
+
 
   const formatDate = (dateString) => {
     const date = new Date(dateString);
