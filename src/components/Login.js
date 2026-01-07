@@ -55,7 +55,7 @@ function Login({ onLogin }) {
             className="google-signup-btn"
             onClick={handleGoogleLogin}
           >
-            <span className="google-icon"></span> Sign up with Google
+            <span className="google-icon"></span> Sign in with Google
           </Button>
           <div className="login-divider">
             <span>or</span>
