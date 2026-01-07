@@ -1,0 +1,162 @@
+/* Custom Navbar */
+.custom-navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 16px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Brand */
+.navbar-brand-custom {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000 !important;
+  letter-spacing: -0.5px;
+  transition: opacity 0.2s ease;
+}
+
+.navbar-brand-custom:hover {
+  opacity: 0.8;
+}
+
+/* Nav Container */
+.custom-navbar .nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* User Email */
+
+
+/* Buttons */
+.login-button,
+.signup-button,
+.nav-button,
+.logout-button {
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+/* Login Button (on landing) */
+.login-button {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.login-button:hover {
+  background-color: #1f2937;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Sign Up Button (on auth pages) */
+.signup-button {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #e5e7eb;
+}
+
+.signup-button:hover {
+  background-color: #f9fafb;
+  color: #000000;
+  border-color: #d1d5db;
+  transform: translateY(-1px);
+}
+
+/* Nav Button (Dashboard/Profile links) */
+.nav-button {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #e5e7eb;
+}
+
+.nav-button:hover {
+  background-color: #f9fafb;
+  color: #000000;
+  border-color: #d1d5db;
+  transform: translateY(-1px);
+}
+
+/* Logout Button */
+.logout-button {
+  background-color: #ffffff;
+  color: #ef4444;
+  border: 1px solid #fecaca;
+  margin-left: 10px;
+}
+.navbar-brand-custom img {
+  display: block;
+}
+
+.navbar-brand-custom span {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+}
+
+.logout-button:hover {
+  background-color: #fef2f2;
+  color: #dc2626;
+  border-color: #fca5a5;
+  transform: translateY(-1px);
+}
+
+/* Focus States */
+.login-button:focus,
+.signup-button:focus,
+.nav-button:focus,
+.logout-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .custom-navbar {
+    padding: 12px 0;
+  }
+
+  .navbar-brand-custom {
+    font-size: 20px;
+  }
+
+  .custom-navbar .nav {
+    gap: 12px;
+  }
+
+  .user-email {
+    display: none;
+  }
+
+  .login-button,
+  .signup-button,
+  .nav-button,
+  .logout-button {
+    padding: 6px 16px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-navbar .nav {
+    gap: 8px;
+  }
+
+  .navbar-brand-custom {
+    font-size: 18px;
+  }
+
+  .login-button,
+  .signup-button,
+  .nav-button,
+  .logout-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}

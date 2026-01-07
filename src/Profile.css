@@ -1,0 +1,296 @@
+/* Profile Container */
+.profile-container {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+/* Profile Header */
+.profile-header h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.profile-header p {
+  font-size: 15px;
+  color: #6b7280;
+}
+
+/* Profile Card */
+.profile-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.profile-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.profile-card .card-body {
+  padding: 24px;
+}
+
+/* Profile Avatar */
+.profile-avatar {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #000000 0%, #374151 100%);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.profile-card h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+}
+
+/* Badges */
+.profile-card .badge {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 6px;
+}
+
+.badge.bg-success {
+  background-color: #10b981 !important;
+}
+
+.badge.bg-secondary {
+  background-color: #6b7280 !important;
+}
+
+/* Profile Info */
+.profile-info .info-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 6px;
+}
+
+.profile-info .info-value {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+}
+
+/* Horizontal Rule */
+.profile-card hr {
+  border-color: #e5e7eb;
+  margin: 20px 0;
+}
+
+/* Section Titles */
+.profile-card h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  display: flex;
+  align-items: center;
+}
+
+.profile-card h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+
+/* Alerts */
+.profile-card .alert {
+  border-radius: 8px;
+  border: 1px solid;
+  padding: 16px;
+  margin-bottom: 0;
+}
+
+.profile-card .alert-success {
+  background-color: #f0fdf4;
+  border-color: #86efac;
+  color: #166534;
+}
+
+.profile-card .alert-info {
+  background-color: #eff6ff;
+  border-color: #93c5fd;
+  color: #1e40af;
+}
+
+.profile-card .alert strong {
+  font-weight: 600;
+}
+
+.profile-card .alert .small {
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* Feature List */
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.feature-item {
+  font-size: 14px;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Usage Bar */
+.usage-bar-container {
+  margin-top: 16px;
+}
+
+.usage-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.usage-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #3b82f6 0%, #1d4ed8 100%);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.usage-text {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Upgrade Section */
+.upgrade-section {
+  padding: 20px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.upgrade-section h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.upgrade-section p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Buttons */
+
+
+
+
+
+
+
+
+.profile-card .btn-outline-danger {
+  color: #f6f2f2;
+  border-color: #fecaca;
+  background-color: #111010;
+  font-weight: 500;
+  padding: 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+
+
+/* Loading Spinner */
+.profile-container .spinner-border {
+  width: 3rem;
+  height: 3rem;
+  margin-top: 100px;
+  border-color: #000000;
+  border-right-color: transparent;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 24px 16px;
+  }
+
+  .profile-header h2 {
+    font-size: 28px;
+  }
+
+  .profile-avatar {
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+  }
+
+  .profile-card .card-body {
+    padding: 20px;
+  }
+
+  .feature-list {
+    grid-template-columns: 1fr;
+  }
+
+  .upgrade-section {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-container {
+    padding: 20px 12px;
+  }
+
+  .profile-header h2 {
+    font-size: 24px;
+  }
+
+  .profile-header p {
+    font-size: 14px;
+  }
+
+  .profile-avatar {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+
+  .profile-card h4 {
+    font-size: 18px;
+  }
+
+  .profile-card .card-body {
+    padding: 16px;
+  }
+
+  .profile-info .info-value {
+    font-size: 14px;
+  }
+
+  .profile-card h5 {
+    font-size: 16px;
+  }
+
+  .feature-item {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,129 @@
+/* Upload Section */
+.upload-section {
+  margin-bottom: 32px;
+}
+
+.upload-section h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+/* Upload Dropzone */
+.upload-dropzone {
+  background-color: #ffffff;
+  border: 2px dashed #d1d5db;
+  border-radius: 12px;
+  padding: 48px 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-dropzone:hover {
+  border-color: #000000;
+  background-color: #f9fafb;
+}
+
+.upload-dropzone.dragging {
+  border-color: #000000;
+  background-color: #f3f4f6;
+  transform: scale(1.01);
+}
+
+.upload-dropzone .fs-1 {
+  font-size: 48px !important;
+  margin-bottom: 16px;
+}
+
+.upload-dropzone .fs-1::before {
+ 
+}
+
+.upload-dropzone h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.upload-dropzone p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* Upload Button */
+.upload-dropzone .btn-gradient {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.upload-dropzone .btn-gradient:hover {
+  background-color: #1f2937;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.upload-dropzone .btn-gradient:active,
+.upload-dropzone .btn-gradient:focus {
+  background-color: #111827 !important;
+  box-shadow: none !important;
+}
+
+/* File Input (Hidden) */
+.file-input {
+  display: none;
+}
+
+/* Spinner */
+.upload-dropzone .spinner-border {
+  width: 2rem;
+  height: 2rem;
+  border-color: #000000;
+  border-right-color: transparent;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .upload-dropzone {
+    padding: 36px 20px;
+  }
+
+  .upload-dropzone .fs-1 {
+    font-size: 40px !important;
+  }
+
+  .upload-dropzone h5 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .upload-section h4 {
+    font-size: 18px;
+  }
+
+  .upload-dropzone {
+    padding: 32px 16px;
+  }
+
+  .upload-dropzone .fs-1 {
+    font-size: 36px !important;
+  }
+
+  .upload-dropzone h5 {
+    font-size: 15px;
+  }
+
+  .upload-dropzone p {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,173 @@
+/* File Card */
+.file-card {
+  background-color: #ffffff;
+  border: 1px solid #b8c0d1;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.file-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-color: #d1d5db;
+}
+
+/* Delete Button */
+.delete-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 52px;
+  height: 32px;
+  background-color: rgba(15, 14, 14, 0.95);
+  color: #e4e7e8;
+  border: 1px solid #d3caca;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: all 0.2s ease;
+ 
+}
+
+
+/* File Thumbnail */
+.file-thumbnail {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background-color: #f3f4f6;
+}
+
+/* File Icon Container */
+.file-icon-container {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  font-size: 64px;
+}
+
+/* File Info */
+.file-info {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* File Name */
+.file-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* File Date */
+.file-date {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+/* Keywords Section */
+.file-info .small {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.file-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.keyword-badge {
+  display: inline-block;
+  background-color: #f3f4f6;
+  color: #374151;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid #e5e7eb;
+}
+
+/* Download Link */
+.file-info a {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: auto;
+  padding-top: 8px;
+  border-top: 1px solid #e5e7eb;
+  transition: opacity 0.2s ease;
+}
+
+.file-info a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .file-card {
+    max-width: 100%;
+  }
+
+  .file-thumbnail,
+  .file-icon-container {
+    height: 160px;
+  }
+
+  .file-icon-container {
+    font-size: 56px;
+  }
+
+  .file-info {
+    padding: 14px;
+  }
+
+  .file-name {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .file-thumbnail,
+  .file-icon-container {
+    height: 140px;
+  }
+
+  .file-icon-container {
+    font-size: 48px;
+  }
+
+  .file-info {
+    padding: 12px;
+  }
+
+  .delete-btn {
+    width: 48px;
+    height: 28px;
+    font-size: 12px;
+  }
+}
