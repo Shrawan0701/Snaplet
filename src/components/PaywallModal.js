@@ -8,7 +8,6 @@ const [loading, setLoading] = useState(false);
 
   const isIndia = userCountry === 'IN';
   const price = isIndia ? '₹99' : '$15';
-  const currency = isIndia ? 'INR' : 'USD';
 
   const handlePayment = async () => {
     setLoading(true);

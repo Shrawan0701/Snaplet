@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form, InputGroup } from 'react-bootstrap';
+import { Form } from 'react-bootstrap';
 import '../SearchBar.css';
 
 function SearchBar({ onSearch, searching }) {

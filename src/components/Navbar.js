@@ -7,7 +7,6 @@ function Navbar({ user, onLogout }) {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const isAuthPage = location.pathname === '/login' || location.pathname === '/signup';
   const isLandingPage = location.pathname === '/';
   const isDashboardPage = location.pathname === '/dashboard';
   const isProfilePage = location.pathname === '/profile';

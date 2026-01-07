@@ -41,13 +41,7 @@ function LandingPage() {
     return () => clearInterval(timer);
   }, [testimonials.length]);
 
-  const nextTestimonial = () => {
-    setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
-  };
-
-  const prevTestimonial = () => {
-    setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-  };
+  
 
   return (
     <div className="landing-page">

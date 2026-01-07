@@ -26,12 +26,7 @@ function Profile({ user, onLogout, setUser }) {
     }
   };
 
-  const handleLogout = () => {
-    if (window.confirm('Are you sure you want to logout?')) {
-      onLogout();
-      navigate('/');
-    }
-  };
+  
 
   const handleRenew = () => {
   setShowPaywall(true);
