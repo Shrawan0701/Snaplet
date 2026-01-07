@@ -2,6 +2,8 @@ import React from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Navbar as BootstrapNavbar, Nav, Container, Button } from 'react-bootstrap';
 import '../Navbar.css';
+import snapletLogo from '../assets/snaplet.png';
+
 
 function Navbar({ user, onLogout }) {
   const navigate = useNavigate();
@@ -25,11 +27,12 @@ function Navbar({ user, onLogout }) {
   className="navbar-brand-custom d-flex align-items-center"
 >
   <img
-    src="/snaplet.png"
-    alt="Snaplet logo"
-    height="28"
-    className="me-2"
-  />
+  src={snapletLogo}
+  alt="Snaplet logo"
+  height="28"
+  className="me-2"
+/>
+
   <span>Snaplet</span>
 </BootstrapNavbar.Brand>
 
