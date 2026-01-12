@@ -50,7 +50,7 @@ function LandingPage() {
         <Container>
           <div className="hero-content">
             <h1 className="hero-title">
-              Never lose important screenshots and documents again
+             Your second brain for documents.
             </h1>
             <p className="hero-subtitle">
               Your personal memory vault for screenshots, PDFs, and documents.<br />
@@ -233,7 +233,7 @@ function LandingPage() {
             <Col md={2} className="footer-col">
               <h5 className="footer-heading">Legal</h5>
               <ul className="footer-links">
-                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/privacy">Privacy </a></li>
                 <li><a href="/terms">Terms</a></li>
               </ul>
             </Col>
