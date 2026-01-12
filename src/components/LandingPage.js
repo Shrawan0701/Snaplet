@@ -50,7 +50,7 @@ function LandingPage() {
         <Container>
           <div className="hero-content">
             <h1 className="hero-title">
-             Your second brain for documents.
+             Your Second Brain for Documents
             </h1>
             <p className="hero-subtitle">
               Your personal memory vault for screenshots, PDFs, and documents.<br />
